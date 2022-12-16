@@ -1,0 +1,202 @@
+.users_page {
+  width: 1400px;
+  height: 520px;
+  margin: 13px 96px 0;
+  background: #ffffff;
+  border-radius: 0px 30px 0px 0px;
+  display: flex;
+}
+
+.users_page {
+  border-radius: 30px;
+}
+
+.users_page i {
+  color: #004665;
+}
+
+.users_filter {
+  /* width: 1362px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  /* margin: 13px 96px 0; */
+}
+
+.filter_inp input {
+  width: 200px;
+  height: 30px;
+  background: none;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+}
+
+.filter_inp input + input {
+  margin-left: 95px;
+}
+
+button {
+  width: 120px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+/*  */
+
+.users_top {
+  width: 1366px;
+  height: 42px;
+  /* margin-top: 27px; */
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 6px;
+  gap: 17px;
+  margin: 15px 17px;
+}
+
+.users_top p {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.users_top i {
+  margin: 0px 50px 0 43px;
+}
+
+.users_top p + p {
+  margin-left: 100px;
+}
+/*  */
+
+.users_table_top {
+  width: 1366px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 6px;
+  gap: 17px;
+}
+
+.users_table_top p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 39px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.users_table_top div {
+  width: 98px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+}
+
+.users_table_top .check {
+  color: #004665;
+  margin: 0px 50px 0px 58px;
+}
+
+.users_table_top p + p {
+  margin-left: 100px;
+}
+
+.users_table_top div a + a {
+  margin-left: 17px;
+}
+
+/* ! Dialog start */
+
+.container {
+  height: 100%;
+}
+
+.table-wrapper {
+  margin-bottom: 25px;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.users_table {
+  min-width: 1400px;
+  height: 100%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns:
+    minmax(90px, 6fr)
+    minmax(150px, 3fr)
+    minmax(200px, 3fr)
+    minmax(150px, 4fr)
+    minmax(150px, 10fr)
+    minmax(150px, 8fr)
+    minmax(150px, 1fr)
+    minmax(150px, 1fr);
+}
+
+table thead,
+table tbody,
+table tr {
+  display: contents;
+}
+
+table th {
+  position: relative;
+  font-size: 18px;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 16px 20px;
+  min-width: 84px;
+}
+
+table th span,
+table td span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+table tr td {
+  border-top: 1px solid #ccc;
+}
+
+.resize-handle {
+  display: block;
+  position: absolute;
+  cursor: col-resize;
+  width: 7px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  border-right: 2px solid transparent;
+}
+
+.resize-handle:hover {
+  border-color: #ccc;
+}
+
+.resize-handle.active {
+  border-color: #517ea5;
+}

@@ -1,0 +1,151 @@
+/* .all_main_block {
+  width: 1400px;
+  height: 550px;
+  margin-left: 96px;
+  margin-top: -4px;
+  background-color: #ffffff;
+  border-radius: 0px 30px 0px 0px;
+}
+
+.all-mail-block-content {
+  width: 1366px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 17px 15px 17px;
+}
+
+.all_page_filter {
+  width: 1366px;
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.all_page_filter div {
+  height: 53px;
+}
+.all_page_filter div input {
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+}
+
+.all_input {
+  height: 53px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inp_label {
+  color: rgba(23, 23, 23, 0.76);
+  font-weight: 600;
+  font-style: 10px;
+  line-height: 12;
+  color: #004665;
+}
+
+.input {
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  color: #004665;
+}
+
+.box_select {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.select {
+  height: 30px;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  background: none;
+  font-weight: 600;
+  font-style: 10px;
+  line-height: 15;
+  color: #004665;
+} */
+
+/* ! Resizable table */
+
+.container {
+  height: 100%;
+}
+
+.table-wrapper {
+  margin-bottom: 25px;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+
+table {
+  min-width: 1400px;
+  height: 100%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns:
+    minmax(90px, 1fr)
+    minmax(136px, 1fr)
+    minmax(178px, 2fr)
+    minmax(196px, 2fr)
+    minmax(172px, 2fr)
+    minmax(116px, 1fr)
+    minmax(160px, 1fr)
+    minmax(124px, 1fr);
+}
+
+table thead,
+table tbody,
+table tr {
+  display: contents;
+}
+
+table th {
+  position: relative;
+  font-size: 18px;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 16px 20px;
+  min-width: 84px;
+}
+
+table th span,
+table td span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+table tr td {
+  border-top: 1px solid #ccc;
+}
+
+.resize-handle {
+  display: block;
+  position: absolute;
+  cursor: col-resize;
+  width: 7px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  border-right: 2px solid transparent;
+}
+
+.resize-handle:hover {
+  border-color: #ccc;
+}
+
+.resize-handle.active {
+  border-color: #517ea5;
+}

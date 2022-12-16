@@ -1,0 +1,142 @@
+.ok_btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+.confirm {
+  width: 400px;
+  height: 375px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -400px;
+  left: calc(50% - 180px);
+  border-radius: 15px;
+}
+
+.confirm.show {
+  top: calc(50% - 140px);
+}
+
+.confirm-content {
+  width: "400px";
+  height: "375px";
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm.show + .overlay {
+  display: block;
+}
+
+.button {
+  background: none;
+  border: 3px solid #fff;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 4rem;
+}
+
+/* @media screen and (max-width: px) {
+  
+} */
+
+/* ! Resizable table */
+
+.container {
+  height: 100%;
+}
+
+.table-wrapper {
+  margin-bottom: 25px;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.sub_table {
+  min-width: 1400px;
+  height: 100%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns:
+    minmax(100px, 3fr)
+    minmax(200px, 5fr)
+    minmax(150px, 4fr)
+    minmax(100px, 3fr)
+    minmax(100px, 3fr)
+    minmax(100px, 3fr)
+    minmax(150px, 1fr)
+    minmax(150px, 3fr)
+    minmax(150px, 1fr);
+}
+
+table thead,
+table tbody,
+table tr {
+  display: contents;
+}
+
+table th {
+  position: relative;
+  font-size: 18px;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 16px 20px;
+  min-width: 84px;
+}
+
+table th span,
+table td span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+table tr td {
+  border-top: 1px solid #ccc;
+}
+
+.resize-handle {
+  display: block;
+  position: absolute;
+  cursor: col-resize;
+  width: 7px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  border-right: 2px solid transparent;
+}
+
+.resize-handle:hover {
+  border-color: #ccc;
+}
+
+.resize-handle.active {
+  border-color: #517ea5;
+}

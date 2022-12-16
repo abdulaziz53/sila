@@ -1,0 +1,239 @@
+.sub-inf-title {
+  width: 417px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #004665;
+}
+
+.sub-inf-title p {
+  width: 351px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #011a38;
+  margin: 20px 33px 20px 33px;
+}
+
+.sub-inf_main-block {
+  width: 417px;
+  height: 405px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-inf_main-inf {
+  width: 377px;
+  height: 233px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 17px 20px 0px 20px;
+}
+
+.sub-inf_left-cont {
+  width: 183px;
+  height: 231px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub-inf_right-cont {
+  width: 183px;
+  height: 231px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub-inf_left-cont p {
+  width: 175.5px;
+  height: 15px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+.sub-inf_right-cont p {
+  width: 175.5px;
+  height: 15px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+label {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(28, 36, 52, 0.67);
+}
+
+.sub-inf_right-cont button {
+  width: 141px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+/*  */
+
+.sub_invoice-inf {
+  width: 377px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 10px;
+}
+
+.sub_invoice-inf span + span {
+  margin-left: 20px;
+}
+
+.sub_invoice-inf p {
+  width: 97px;
+  height: 13px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+.sub_unpaid-invoices span {
+  width: 45px;
+  height: 15px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+}
+
+.sub_unpaid-invoices {
+  width: 367px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub_unpaid-invoices_btn {
+  display: flex;
+  margin-left: 20px;
+}
+
+.sub_unpaid-invoices button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 30px;
+  background: #ffffff;
+  border: 3px solid #004665;
+  border-radius: 5px;
+  color: #004665;
+  margin-left: 20px;
+}
+
+/*  */
+
+.sub-inf_inp {
+  width: 339px;
+  height: 53px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sub-inf_inp input {
+  width: 325px;
+  height: 30px;
+  background: rgba(146, 167, 199, 0.28);
+  border: 3px solid #004665;
+  border-radius: 5px;
+}
+
+/*  */
+
+.edit_close_btn {
+  width: 53px;
+}
+
+.edit_save_btn {
+  width: 41px;
+}
+
+.edit_cont_btn {
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+}
+
+/*  */
+
+.confirm_sub-inf {
+  width: 417px;
+  height: 555px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -800px;
+  left: calc(50% - 200px);
+  border-radius: 15px;
+}
+
+.confirm_sub-inf.show_sub-inf {
+  top: calc(30% - 140px);
+}
+
+.sub-inf_confirm-content {
+  width: 417px;
+  height: 555px;
+}
+
+.overlay_sub-inf {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.confirm_sub-inf.show_sub-inf + .overlay_sub-inf {
+  display: block;
+}
+
+.button {
+  background: none;
+  border: 3px solid #fff;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 4rem;
+}
+
+/* ! Status */

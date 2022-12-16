@@ -1,0 +1,69 @@
+/* 
+.ok_btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #004665;
+  background: rgba(146, 167, 199, 0.28);
+  border-radius: 5px;
+  border: none;
+  margin: 17px 30px 17px 0px;
+} */
+
+.inv_img {
+  width: 873px;
+  height: 650px;
+}
+
+.in_confirm {
+  width: 873px;
+  height: 600px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 100;
+  position: absolute;
+  top: -1000px;
+  left: calc(40% - 250px);
+  border-radius: 15px;
+}
+
+.in_confirm.in_show {
+  top: calc(25% - 140px);
+}
+
+.in_confirm-content {
+  width: "873px";
+  height: "600px";
+}
+
+.in_overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(28, 36, 52, 0.67);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.in_confirm.in_show + .in_overlay {
+  display: block;
+}
+
+/* .button {
+  background: none;
+  border: 3px solid #fff;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 4rem;
+} */
+
+/* @media screen and (max-width: px) {
+    
+  } */
